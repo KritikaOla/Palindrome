@@ -1,0 +1,19 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+    //base case when given integer is negative
+        if(x<0){
+            return false;
+        }
+        //stored the value of x in a temporarily variable, so that we can 
+        //compare x 's value with reverted value later on without getting error
+        int t=x;
+        
+        int rev= 0;            //will store reverse value
+        while(t!=0){
+            int r= t%10;     //wo store reminder
+            rev= rev*10+r;
+            t=t/10;
+        }
+        return x==rev;      //will return true if palindrome
+    }
+}
