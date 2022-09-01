@@ -10,7 +10,7 @@ class Solution {
         
         int rev= 0;            //will store reverse value
         while(t!=0){
-            int r= t%10;     //wo store reminder
+            int r= t%10;     //to store reminder
             rev= rev*10+r;
             t=t/10;
         }
